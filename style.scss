@@ -1,0 +1,58 @@
+$pastelPink: #ffcccc;
+$pastelBlue: #99cccc;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: linear-gradient(90deg, $pastelPink 60%, $pastelBlue 40%);
+    font-variant: small-caps;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    @include flex;
+    flex-direction: column;
+}
+
+.nav {
+    @include flex;
+    flex-direction: row;
+    a {
+        color: white;
+        text-decoration: none;
+        margin: {
+            left: 3rem;
+            top: 2rem;
+        }
+        font-size:1.2rem;
+        letter-spacing: .2rem;
+    }
+}
+
+.main {
+    @include flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 100vh;
+    color: white;
+    h1:nth-child(1) {
+    margin-bottom:0;
+    }
+    h1:nth-child(2) {
+        letter-spacing: .8rem;
+        font-weight: 800;
+        font-size: 7rem;
+        opacity: .7;
+    }
+}
