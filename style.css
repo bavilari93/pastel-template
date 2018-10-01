@@ -28,6 +28,10 @@ html {
     margin-top: 2rem;
     font-size: 1.2rem;
     letter-spacing: .2rem; }
+    .nav a:hover {
+      color: grey; }
+    .nav a .select {
+      border-bottom: .09rem solid #fff; }
 
 .main {
   display: flex;

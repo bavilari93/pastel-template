@@ -37,8 +37,15 @@ html {
         }
         font-size:1.2rem;
         letter-spacing: .2rem;
+        &:hover{
+        	color:grey;
+        }
+       .select{
+       		border-bottom: .09rem solid #fff;
+       }
     }
 }
+
 
 .main {
     @include flex;
